@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: black
+}
+
+#hero p {
+    color: black
+}
+
+.cta-btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.cta-btn:hover {
+    background-color: #c7441c;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#how-it-works .steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+#how-it-works .step {
+    width: 30%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#benefits ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+#benefits ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+#testimonials .testimonial {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#signup-form input[type="text"],
+#signup-form input[type="email"] {
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#signup-form button {
+    padding: 0.7rem;
+    width: 100%;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+#signup-form button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Styles */
+/* Large Devices: Desktops */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .main-content section {
+        width: 48%;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Medium Devices: Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    .main-content section {
+        width: 48%;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+}
+
+/* Small Devices: Phones */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content section {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
